@@ -101,9 +101,6 @@ $screenwidth: 750;
 .content{
     .logo-box{
         margin-bottom: 1rem;
-        @media (max-width:1024px) {
-            margin: 0;
-        }
         .logo{
             @media (max-width:568px) {
                 max-width: 64px;
@@ -113,7 +110,7 @@ $screenwidth: 750;
     .title-box{
         margin-bottom: 3rem;
         @media (max-width:1024px) {
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
         .title-sm{
             display: none;

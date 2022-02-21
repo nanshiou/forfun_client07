@@ -115,12 +115,6 @@ html, body {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 1024px) {
-  .content .logo-box {
-    margin: 0;
-  }
-}
-
 @media (max-width: 568px) {
   .content .logo-box .logo {
     max-width: 64px;
@@ -133,7 +127,7 @@ html, body {
 
 @media (max-width: 1024px) {
   .content .title-box {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
