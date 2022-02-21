@@ -1,0 +1,316 @@
+@charset "UTF-8";
+/*
+reast
+***********************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: .938rem;
+}
+
+h1, h2, .h3, h4, h5, h6 {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  color: inherit;
+}
+
+body {
+  line-height: 1.5;
+  background: #170E30;
+  font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.fullPage {
+  background: url("../images/beauty-bg.webp") no-repeat center/cover;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-attachment: scroll;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1024px) {
+  .fullPage {
+    background: url("../images/beauty-bg-xs.webp") no-repeat center/cover;
+  }
+}
+
+.app-download {
+  position: relative;
+  min-height: 75vh;
+  padding: 5.6vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .app-download {
+    text-align: center;
+    padding: 24vh 5.6vw 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.content .logo-box {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 568px) {
+  .content .logo-box .logo {
+    max-width: 64px;
+  }
+}
+
+.content .title-box {
+  margin-bottom: 3rem;
+}
+
+.content .title-box .title-sm {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .content .title-box .title-sm {
+    display: block;
+  }
+}
+
+.content .title-box .title-md {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .content .title-box .title-md {
+    display: none;
+  }
+}
+
+.download-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.download-box .btn-group, .download-box .qrocde-group {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .download-box .btn-group, .download-box .qrocde-group {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .download-box .btn-group {
+    margin-bottom: 2rem;
+  }
+}
+
+.download-box .btn-group .btn {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .download-box .btn-group .btn {
+    max-width: inherit;
+  }
+}
+
+.download-box .btn-group .btn + .btn {
+  margin-top: 1.5rem;
+}
+
+.download-box .qrocde-group {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .download-box .qrocde-group {
+    margin: 1rem;
+  }
+}
+
+.download-box .qrocde-group .text {
+  margin: .5rem 0;
+}
+
+.icon-ios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: .5rem;
+}
+
+.icon-ios::after {
+  content: " ";
+  background-image: url("../images/icon-apple.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.icon-android {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: .5rem;
+}
+
+.icon-android::after {
+  content: " ";
+  background-image: url("../images/icon-android.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px 16px;
+  font-size: 1.125rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 36px;
+}
+
+.btn-ios {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9633FF), to(#7E23FF));
+  background: linear-gradient(180deg, #9633FF 0%, #7E23FF 100%);
+  -webkit-box-shadow: 0px 4px 4px rgba(128, 36, 255, 0.24), inset 0px -4px 6px rgba(255, 255, 255, 0.25), inset 0px 1px 3px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 4px 4px rgba(128, 36, 255, 0.24), inset 0px -4px 6px rgba(255, 255, 255, 0.25), inset 0px 1px 3px rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+
+.btn-ios:hover {
+  background: linear-gradient(49deg, #9861f8, #ea58ec);
+}
+
+.btn-android {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F3E3FF), to(#FAF4FF));
+  background: linear-gradient(180deg, #F3E3FF 0%, #FAF4FF 100%);
+  border: 2px solid #E9D2FF;
+  color: #7A3CFF;
+}
+
+.btn-android:hover {
+  color: #ea58ec;
+}
+
+.btn-android:hover .icon-android::after {
+  background: url("../images/icon-android-hover.svg");
+}
+/*# sourceMappingURL=theme.css.map */
