@@ -104,7 +104,7 @@ html, body {
 @media (max-width: 1024px) {
   .app-download {
     text-align: center;
-    padding: 24vh 5.6vw 0;
+    padding: 40vh 5.6vw 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
